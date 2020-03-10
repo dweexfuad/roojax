@@ -1,0 +1,738 @@
+window.util_financeLib = function(connection, filename){
+	try{
+		this.remoteClassName = "server_util_financeLib";
+		if (filename == undefined) filename = system.getActiveApplication()._rfcSetting;
+		window.util_financeLib.prototype.parent.constructor.call(this, connection,filename);		
+		this.className = "util_financeLib";
+		this.filename = filename;
+		this.app = system.getActiveApplication();
+	}catch(e){
+		systemAPI.alert("[util_financeLib]::constructor:" + e);
+	}
+};
+window.util_financeLib.extend(window.server_RemoteObject);
+window.util_financeLib.implement({	
+	getDataEXSUM: function(model, periode, ubis, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataEXSUM", undefined, form);
+	},
+	getDataOutlook: function(model, periode, ubis, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataOutlook", undefined, form);
+	},
+	getDataOutlookDatel: function(model, periode, datel, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(datel);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataOutlookDatel", undefined, form);
+	},
+	getDataTrend: function(model, thn1,thn2, ubis, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrend", undefined, form);
+	},
+	getDataTrendOutlook: function(model, thn1,thn2, ubis, neraca, metode, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(metode);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendOutlook", undefined, form);
+	},
+	getDataTrendOutlookDatel: function(model, thn1,thn2, datel, neraca, metode, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(datel);
+		this.params.add(neraca);
+		this.params.add(metode);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendOutlookDatel", undefined, form);
+	},
+	getDataTrendOutlookTemplate: function(model, thn1,thn2, ubis, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendOutlookTemplate", undefined, form);
+	},
+	getDataTrendOutlookDetail: function(model, thn1,thn2, ubis, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		return this.getRequestObj("getDataTrendOutlookDetail");
+		
+	},
+	getDataTrendOutlookDivreDetail: function(model, thn1,thn2, ubis, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		return this.getRequestObj("getDataTrendOutlookDivreDetail");
+		
+	},
+
+	getDataTrendOutlookDatelDetail: function(model, thn1,thn2, ubis, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		return this.getRequestObj("getDataTrendOutlookDatelDetail");
+		
+	},
+	getDataTrendQuart: function(model, thn1,thn2, ubis, neraca, lokasi, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(lokasi);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendQuart", undefined, form);
+	},
+	getDataTrendQuartOutlook: function(model, thn1,thn2, ubis, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendQuartOutlook", undefined, form);
+	},
+	getDataTrendHalfOutlook: function(model, thn1,thn2, ubis, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendHalfOutlook", undefined, form);
+	},
+	getDataTrendQuartDetail: function(model, thn1,thn2, ubis, neraca, lokasi, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(lokasi);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendQuartDetail", undefined, form);
+	},
+	getDataEXSUMCC: function(model, periode, ubis, lokasi,  neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(ubis);
+		this.params.add(lokasi);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataEXSUMCC", undefined, form);
+	},
+	getDataTrendCC: function(model, thn1,thn2, ubis, lokasi, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(lokasi);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendCC", undefined, form);
+	},
+	getDataTrendBudgetCC: function(model, thn1,thn2, ubis, lokasi, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(lokasi);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendBudgetCC", undefined, form);
+	},
+
+	getDataTrendDetail: function(model, thn1,thn2, ubis, lokasi, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(lokasi);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendDetail", undefined, form);
+	},
+	getDataTrendBudgetDetail: function(model, thn1,thn2, ubis, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendBudgetDetail", undefined, form);
+	},
+	getDataEXSUMDetailCC: function(model, periode, neraca, ubis, lokasi,  form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(neraca);
+		this.params.add(ubis);
+		this.params.add(lokasi);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataEXSUMDetailCC", undefined, form);
+	},
+	getDataBudgetTrend: function(model, thn1,thn2, ubis, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(ubis);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataBudgetTrend", undefined, form);
+	},
+	getDataExp: function(model, periode, ubis, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(ubis);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataExp", undefined, form);
+	},
+	getDataRev: function(model, periode, ubis, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(ubis);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataRev", undefined, form);
+	},
+	getDataRevSegmen: function(model, periode, segmen, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(segmen);
+		this.callAsynch("getDataRevSegmen", undefined, form);
+	},
+	getDataRevSegmenUbis: function(model, periode, segmen, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(segmen);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataRevSegmenUbis",undefined, form);
+	},
+	getDataRevSegmenDatel: function(model, periode, segmen, witel, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(segmen);
+		this.params.add(witel);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataRevSegmenDatel", undefined, form);
+	},
+	getDataBudgetTrendSegmen: function(model, thn1,thn2, segmen, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(segmen);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataBudgetTrendSegmen",undefined, form);
+	},
+	getDataRevUbis: function(model, periode, ubis, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(ubis);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataRevUbis",undefined, form);
+	},
+	getDataExpUbis: function(model, periode, ubis, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(ubis);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataExpUbis",undefined, form);
+	},
+	generatePPTX: function(options, namafile){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		return this.getRequestObj("generatePPTX");
+	},
+	generateXLS: function(options,  namafile, remoteFunction){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(remoteFunction);
+		return this.getRequestObj("generateXLS");
+	},
+	generateXLSDatel: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSDatel");
+	},
+	generateXLSDatel2: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSDatel2");
+	},
+	generateXLSTrendOutlook: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSTrendOutlook");
+	},
+	generateXLSTrendOutlookTemplate: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSTrendOutlookTemplate");
+	},
+	generateXLSTrendWitel: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSTrendWitel");
+	},
+	generateXLSTrendWitelBudget: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSTrendWitelBudget");
+	},
+	generateXLSTrendWitel2: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSTrendWitel2");
+	},
+	generateXLSDivisi: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSDivisi");
+	},
+	generateXLSJejerDivisi: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSJejerDivisi");
+	},
+	generateXLSJejerBudgetDivisi: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSJejerBudgetDivisi");
+	},
+	generateXLSJejerWitel: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSJejerWitel");
+	},
+	generateXLSJejerAggWitel: function(options,  namafile, filter){
+		this.params.clear();
+		this.params.add(options);
+		this.params.add(namafile);
+		this.params.add(filter);
+		return this.getRequestObj("generateXLSJejerAggWitel");
+	},
+
+	getDataAccount: function(model, periode, nTop, jenis, order, sortOrder, ubis, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(nTop);
+		this.params.add(jenis);
+		this.params.add(order);
+		this.params.add(sortOrder);
+		this.params.add(ubis);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataAccount",undefined, form);
+	},
+	getDataJejerAgg: function(model, periode, ubis, form){
+		this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerAgg",undefined, form);
+    },
+    getDataJejerActual: function(model, periode, ubis, form){
+        this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerActual",undefined, form);
+    },
+    getDataJejerAggUbis: function(model, periode, group,lokasi, tipeBulan, form){
+		this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(group);
+		this.params.add(lokasi);
+        this.params.add(tipeBulan);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerAggUbis",undefined, form);
+    },
+    getDataJejerActualUbis: function(model, periode, group, lokasi, tipeBulan, form){
+        this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(group);
+		this.params.add(lokasi);
+        this.params.add(tipeBulan);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerActualUbis",undefined, form);
+    },
+	getDataJejerAggUbisDetail: function(model, periode, group,lokasi, tipeBulan, neraca, form){
+		this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(group);
+		this.params.add(lokasi);
+        this.params.add(tipeBulan);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerAggUbisDetail",undefined, form);
+    },
+    getDataJejerActualUbisDetail: function(model, periode, group, lokasi, tipeBulan, neraca, form){
+        this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(group);
+		this.params.add(lokasi);
+        this.params.add(tipeBulan);
+		this.params.add(neraca);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerActualUbisDetail",undefined, form);
+    },
+    getDataJejerAggCostCenter: function(model, periode, ubis, form){
+		this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.callAsynch("getDataJejerAggCostCenter",undefined, form);
+    },
+    getDataJejerActualCostCenter: function(model, periode, ubis){
+        this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerActualCostCenter", undefined, form);
+    },
+    getDataJejerAggDatel: function(model, periode, witel, form){
+		this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(witel);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerAggDatel", undefined, form);
+    },
+    getDataJejerActualDatel: function(model, periode, witel, form){
+        this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(witel);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerActualDatel",undefined, form);
+    },
+    getDataJejerAggWitel: function(model, periode, ubis, form){
+		this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerAggWitel",undefined, form);
+    },
+    getDataJejerActualWitel: function(model, periode, ubis, form){
+        this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerActualWitel",undefined, form);
+    },
+    getDataJejerActualWitelDetail: function(model, periode, ubis, neraca, form){
+        this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.params.add(neraca);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerActualWitelDetail",undefined, form);
+    },
+    getDataJejerAggWitelDetail: function(model, periode, ubis, neraca, form){
+        this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.params.add(neraca);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerAggWitelDetail",undefined, form);
+    },
+    getDataJejerAggCC: function(model, periode, ubis, form){
+		this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerAggCC",undefined, form);
+    },
+    getDataJejerActualCC: function(model, periode, ubis, form){
+        this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerActualCC",undefined, form);
+    },
+    getDataEXSUMDetail: function(model, periode, neraca, ubis, lokasi,  form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(neraca);
+		this.params.add(ubis);
+		this.params.add(lokasi);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataEXSUMDetail",undefined, form);
+	},
+    getDataEXSUMDatel: function(model, periode,  datel, neraca, dataNasional,segmen, form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(datel);
+		this.params.add(neraca);
+		this.params.add(dataNasional);
+		this.params.add(segmen);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataEXSUMDatel",undefined, form);
+	},
+	getDataEXSUMDatelAll: function(model, periode,  datel, neraca, dataNasional,segmen, form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(datel);
+		this.params.add(neraca);
+		this.params.add(dataNasional);
+		this.params.add(segmen);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataEXSUMDatelAll",undefined, form);
+	},
+	getDataEXSUMDatelAllRecalculate: function(model, periode,  datel, neraca, dataNasional,segmen, form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(datel);
+		this.params.add(neraca);
+		this.params.add(dataNasional);
+		this.params.add(segmen);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataEXSUMDatelAllRecalculate",undefined, form);
+	},
+	getDataJejerSegmen: function(model, periode,  witel, form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(witel);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataJejerSegmen",undefined, form);
+	},
+	getDataEXSUMDatelDetail: function(model, periode,  datel, neraca, ubis, form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(datel);
+		this.params.add(neraca);
+		this.params.add(ubis);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataEXSUMDatelDetail",undefined, form);
+	},
+	getDataEXSUMDatel2: function(model, periode,  datel, neraca, dataNasional, segmen, sourceData,form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(datel);
+		this.params.add(neraca);
+		this.params.add(dataNasional);
+		this.params.add(segmen);
+		this.params.add(sourceData);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataEXSUMDatel2",undefined, form);
+	},
+	getDataEXSUMDatelDetail2: function(model, periode,  datel, neraca, segmen, form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(datel);
+		this.params.add(neraca);
+		this.params.add(segmen);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataEXSUMDatelDetail2",undefined, form);
+	},
+    getDataTrendDatel: function(model, tahun1, tahun2, datel, form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(tahun1);
+		this.params.add(tahun2);
+		this.params.add(datel);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendDatel",undefined, form);
+	},
+	getDataTrendDatelAkun: function(model, tahun1, tahun2, datel, neraca, kode_ubis, form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(tahun1);
+		this.params.add(tahun2);
+		this.params.add(datel);
+		this.params.add(neraca);
+		this.params.add(kode_ubis);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendDatelAkun",undefined, form);
+	},
+	getDataTrendDatelBudget: function(model, tahun1, tahun2, datel, form){
+    	this.params.clear();
+		this.params.add(model);
+		this.params.add(tahun1);
+		this.params.add(tahun2);
+		this.params.add(datel);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataTrendDatelBudget",undefined, form);
+	},
+
+	getDataBudgetTrendDatel: function(model, thn1,thn2, datel, neraca, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(thn1);
+		this.params.add(thn2);
+		this.params.add(datel);
+		this.params.add(neraca);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataBudgetTrendDatel",undefined, form);
+	},
+	getTBCC : function(login, tahun, ubis){
+		this.params.clear();
+		this.params.add(login);
+		this.params.add(tahun);
+		this.params.add(ubis);
+		return this.call("getTBCC");
+
+	},
+	getAggNewDatel : function(login, tahun, ubis){
+		this.params.clear();
+		this.params.add(login);
+		this.params.add(tahun);
+		this.params.add(ubis);
+		return this.call("getAggNewDatel");
+	},
+	getDataRevDatel: function(model, periode, datel,  form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(datel);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataRevDatel",undefined, form);
+	},
+	getDataExpDatel: function(model, periode, datel, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(datel);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataExpDatel",undefined, form);
+	},
+	getDataAccountDatel: function(model, periode, nTop, jenis, order, sortOrder, datel, form){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(nTop);
+		this.params.add(jenis);
+		this.params.add(order);
+		this.params.add(sortOrder);
+		this.params.add(datel);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataAccountDatel",undefined, form);
+	},
+	getDataSimulasiBPC: function(model, periode,divisi, pembagi){
+		this.params.clear();
+		this.params.add(model);
+		this.params.add(periode);
+		this.params.add(divisi);
+		this.params.add(this.app._pembagi);
+		this.callAsynch("getDataSimulasiBPC",undefined, form);	
+	},
+	getDataJejerAggRKAP: function(model, periode, ubis, form){
+		this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerAggRKAP",undefined, form);
+    },
+	getDataJejerPenetapan: function(model, periode, ubis, form){
+		this.params.clear();
+        this.params.add(model);
+        this.params.add(periode);
+        this.params.add(ubis);
+        this.params.add(this.app._pembagi);
+        this.callAsynch("getDataJejerPenetapan",undefined, form);
+    }
+});

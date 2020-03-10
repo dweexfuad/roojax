@@ -1,0 +1,2017 @@
+
+**** ERROR file opened at 20110523 142122 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140455797331808 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140455797331808 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110525 165636 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139899355817824 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:139899355817824 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110525 165639 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139899355817824 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:139899355817824 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110526 090633 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139663296800608 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:139663296800608 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110530 102046 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140418454054752 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140418454054752 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Mon May 30 13:21:13 2011
+T:140418454054752 Error in program 'apache2': ======> Time limit exceeded.
+T:140418454054752 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+T:140418454054752 Error in program 'apache2': <* RfcCallReceive [8] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110604 214351 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140630534907744 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 10.2.12.138, service 3300)
+
+TIME        Sat Jun  4 21:43:51 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -10
+MODULE      nixxi_r_mt.cpp
+LINE        8786
+DETAIL      NiPConnect2
+SYSTEM CALL SiPeekPendConn
+ERRNO       111
+ERRNO TEXT  Connection refused
+COUNTER     1
+
+
+**** ERROR file opened at 20110607 082725 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140297993897824 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140297993897824 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun  7 08:27:28 2011
+T:140297993897824 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140297993897824 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110607 144202 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140650663163744 Error in program 'apache2': ======> Time limit exceeded.
+T:140650663163744 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+T:140650663163744 Error in program 'apache2': <* RfcCallReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110608 103048 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140294121330528 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Wed Jun  8 10:30:48 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+
+**** ERROR file opened at 20110608 103221 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140294121330528 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Wed Jun  8 10:32:21 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+
+**** ERROR file opened at 20110609 101043 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140604533843808 Error in program 'apache2': ======> Time limit exceeded.
+T:140604533843808 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+T:140604533843808 Error in program 'apache2': <* RfcCallReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110616 231954 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+>TS> Thu Jun 16 23:19:55 2011
+T:140006813292384 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140006813292384 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110620 143505 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139772549715808 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139772549715808 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110621 084121 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 21 08:44:02 2011
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110621 085912 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 21 08:59:19 2011
+T:140037740918624 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140037740918624 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110621 093417 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110621 094837 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 21 10:25:19 2011
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110621 102923 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110621 103232 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110621 103630 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 21 10:54:17 2011
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [14] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110621 110225 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 21 11:10:32 2011
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 21 11:13:55 2011
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 21 11:32:38 2011
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [25] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 21 11:38:02 2011
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [12] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 21 11:43:11 2011
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [17] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 21 14:11:31 2011
+T:140037740918624 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140037740918624 Error in program 'apache2': <* RfcReceive [14] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 130907 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 132129 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 132417 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140257843828576 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Wed Jun 22 13:24:17 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+
+**** ERROR file opened at 20110622 132735 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [17] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 132805 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 133254 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 13:36:41 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 134107 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 13:45:24 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [30] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 13:53:43 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [28] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 140116 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 14:04:05 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 14:07:47 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 14:07:56 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 14:11:03 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 14:11:20 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [22] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 14:27:45 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [12] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 14:45:27 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [15] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 15:01:47 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [10] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 15:03:45 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 15:05:30 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [24] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 15:07:15 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [15] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 15:08:17 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [13] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 15:45:33 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [16] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 15:52:34 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [18] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 16:01:40 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [18] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 16:32:10 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 16:42:10 2011
+T:140257843828576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140257843828576 Error in program 'apache2': <* RfcReceive [21] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 192130 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140731361888096 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140731361888096 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 192320 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140731361888096 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140731361888096 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 192823 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140731361888096 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140731361888096 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 193400 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140731361888096 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140731361888096 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 19:35:57 2011
+T:140731361888096 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140731361888096 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jun 22 19:43:28 2011
+T:140731361888096 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140731361888096 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110622 212547 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140731361888096 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140731361888096 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 010934 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140731361888096 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140731361888096 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 101004 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140731361888096 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140731361888096 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 110841 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 110902 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 11:13:33 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 114649 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140245476468576 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 13:08:54 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 141433 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 141459 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 141534 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 141558 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:16:06 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:16:11 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 142203 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 142514 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 142714 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 143024 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:30:40 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 143332 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 143356 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 143429 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 143622 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 143710 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:37:57 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 143801 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 144005 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 144033 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 144350 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 144432 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 144518 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 144657 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:47:12 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 145108 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 145456 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 145514 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 145604 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 145611 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 145624 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:56:44 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:57:04 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:57:09 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 145726 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:57:51 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:57:56 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:58:17 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:58:21 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:58:30 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:59:04 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:59:20 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:59:50 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 14:59:55 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 15:00:16 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 150100 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 15:01:09 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 15:01:35 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 150207 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 150228 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 15:02:41 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 150325 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 15:08:38 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 153932 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 15:39:37 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 154341 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 154407 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 15:44:48 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 15:45:09 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 154605 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 15:47:55 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 15:48:37 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 154845 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 155307 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 155320 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 155627 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 160202 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 160233 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 160659 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 16:07:27 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 16:07:54 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 16:08:02 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 160910 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 162139 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Incomplete logon data.
+T:140245476468576 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 23 16:33:36 2011
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110623 163403 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140245476468576 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140245476468576 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110624 090212 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139747632035680 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139747632035680 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jun 24 09:02:23 2011
+T:139747632035680 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139747632035680 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110624 090402 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139747632035680 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139747632035680 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110624 110023 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139747632035680 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139747632035680 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110624 110225 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139747632035680 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139747632035680 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110624 111101 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139747632035680 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139747632035680 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jun 24 11:11:03 2011
+T:139747632035680 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139747632035680 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110627 204643 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140482215503712 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Mon Jun 27 20:46:43 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+>TS> Mon Jun 27 20:47:43 2011
+T:140482215503712 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Mon Jun 27 20:47:43 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     2
+
+
+**** ERROR file opened at 20110628 111013 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139988489717600 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139988489717600 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 28 11:10:21 2011
+T:139988489717600 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139988489717600 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110628 112715 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139988489717600 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139988489717600 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jun 28 11:27:17 2011
+T:139988489717600 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139988489717600 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110629 131304 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140635448117088 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Wed Jun 29 13:13:04 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+
+**** ERROR file opened at 20110630 085503 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140337144919904 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140337144919904 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110630 090208 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140337144919904 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140337144919904 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 30 09:30:33 2011
+T:140337144919904 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140337144919904 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110630 110618 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140337144919904 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140337144919904 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 30 11:40:13 2011
+T:140337144919904 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140337144919904 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 30 11:52:56 2011
+T:140337144919904 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140337144919904 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110630 115532 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140337144919904 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140337144919904 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110630 130827 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140337144919904 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140337144919904 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 30 14:16:25 2011
+T:140337144919904 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140337144919904 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jun 30 14:37:47 2011
+T:140337144919904 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 14:37:47 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     3
+
+>TS> Thu Jun 30 16:40:25 2011
+T:140337144919904 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140337144919904 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110630 211249 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 21:12:49 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+
+**** ERROR file opened at 20110630 211419 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 21:14:19 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+
+**** ERROR file opened at 20110630 211645 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 21:16:45 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+
+**** ERROR file opened at 20110630 211912 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 21:19:12 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+>TS> Thu Jun 30 21:25:32 2011
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 21:25:32 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     2
+
+>TS> Thu Jun 30 21:31:54 2011
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 21:31:54 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     2
+
+
+**** ERROR file opened at 20110630 213810 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 21:38:10 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+
+**** ERROR file opened at 20110630 214409 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 21:44:09 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+>TS> Thu Jun 30 21:54:11 2011
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 21:54:11 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     2
+
+
+**** ERROR file opened at 20110630 215851 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 21:58:51 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+>TS> Thu Jun 30 22:00:10 2011
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 22:00:10 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     2
+
+>TS> Thu Jun 30 22:10:38 2011
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 22:10:38 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     2
+
+>TS> Thu Jun 30 22:12:32 2011
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 22:12:32 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     3
+
+>TS> Thu Jun 30 22:25:02 2011
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Thu Jun 30 22:25:02 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     4
+
+>TS> Fri Jul  1 04:56:47 2011
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Fri Jul  1 04:56:47 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     3
+
+
+**** ERROR file opened at 20110701 045757 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Fri Jul  1 04:57:57 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+>TS> Fri Jul  1 05:04:20 2011
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Fri Jul  1 05:04:20 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     2
+
+>TS> Fri Jul  1 06:29:00 2011
+T:140043873072992 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw00, ASHOST=10.2.12.138, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.138, service 3300 timed out
+
+TIME        Fri Jul  1 06:29:00 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     3
+
+
+**** ERROR file opened at 20110701 081934 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110701 084532 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 08:45:33 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110701 084547 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 08:49:41 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 08:50:42 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110701 100259 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:00 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110701 100301 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:02 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:03 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:04 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:05 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:06 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:07 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:08 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:09 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [10] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:10 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [12] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:11 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [13] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [14] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:12 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [15] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:12 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:13 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [10] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:14 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [12] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [13] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:15 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [14] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [15] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:16 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [16] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:17 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [17] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [18] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:37 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [20] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:38 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [21] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:39 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [22] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [23] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:40 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [24] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [25] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:41 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [26] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:42 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:43 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:44 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:45 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [10] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:45 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [27] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:46 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [28] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:47 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [29] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [30] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:48 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110701 100350 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:51 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:52 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:53 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:54 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [12] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [13] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:55 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [14] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [15] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:56 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [16] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [17] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:58 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:58 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [18] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:03:59 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110701 100400 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:01 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:02 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:03 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [10] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:04 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:05 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:06 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:07 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:08 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [10] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:09 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [12] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [13] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:10 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [14] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [15] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:11 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [16] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:12 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [17] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [18] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:13 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [12] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:14 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [13] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [14] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:15 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [15] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:16 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [16] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [17] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:17 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:17 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [18] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:19 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [20] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:20 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [21] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:21 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [22] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [23] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:22 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [20] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:30 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [21] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [22] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:31 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [23] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [24] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:32 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [25] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:35 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [26] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:36 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [27] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:37 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [28] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:38 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [24] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [25] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:39 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [26] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:40 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [27] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:42 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [28] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [29] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:43 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [30] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110701 100444 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:45 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [29] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [30] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:46 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:47 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:48 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:49 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:49 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:50 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:50 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:51 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:52 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:53 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:53 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:54 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:55 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [10] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:56 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [12] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:57 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [13] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:58 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:04:59 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:00 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:02 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [10] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:03 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [12] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:04 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [13] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:05 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [14] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:06 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [15] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:07 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [16] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [17] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:08 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [18] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:09 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [20] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:10 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [21] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:11 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [22] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [23] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:12 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [24] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:13 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [25] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:14 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [26] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:15 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [27] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:15 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [14] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:16 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [15] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:17 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [16] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:18 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [17] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [18] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:19 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [28] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:20 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:21 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [20] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:22 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [21] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [22] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:23 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [29] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:24 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [23] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:25 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [24] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [25] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:26 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [26] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:27 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [27] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:28 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [28] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:28 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [30] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:29 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [29] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:30 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [30] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:31 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:32 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:33 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:33 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:34 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:35 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:36 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:36 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:37 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:38 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:39 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:40 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:41 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:42 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:43 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:44 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:45 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:45 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:46 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [10] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:47 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [12] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:48 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [13] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:49 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [14] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:50 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [10] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:51 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [15] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:52 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [16] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:53 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [17] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:54 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [18] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:55 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:55 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:56 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [16] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:57 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [17] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:58 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [18] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:05:59 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:06:00 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [20] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:06:01 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [20] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:06:02 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [21] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:06:03 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [22] : returns 3:RFC_SYS_EXCEPTION
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [23] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:06:05 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [21] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:08:30 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [20] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:10:56 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:27:42 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 10:27:53 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 11:29:20 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [22] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 11:38:40 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 13:33:54 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [24] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 13:46:05 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [25] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 13:51:44 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [13] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 14:38:58 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [16] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 15:08:37 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 15:37:17 2011
+T:139784589768544 Error in program 'apache2': ======> Client Q00 is not available in this system
+T:139784589768544 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 15:37:29 2011
+T:139784589768544 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.138, GWSERV=sapgw50, ASHOST=10.2.12.138, SYSNR=50
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 10.2.12.138, service 3350)
+
+TIME        Fri Jul  1 15:37:29 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -10
+MODULE      nixxi_r_mt.cpp
+LINE        8786
+DETAIL      NiPConnect2
+SYSTEM CALL SiPeekPendConn
+ERRNO       111
+ERRNO TEXT  Connection refused
+COUNTER     65
+
+>TS> Fri Jul  1 15:45:58 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 15:56:03 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [30] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 15:58:41 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [17] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 16:09:25 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [25] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 16:12:22 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [19] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 16:26:30 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [18] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 16:34:17 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [20] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 16:41:56 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [21] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 16:44:17 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Jul  1 16:50:44 2011
+T:139784589768544 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:139784589768544 Error in program 'apache2': <* RfcReceive [23] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110704 091950 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140312847214432 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140312847214432 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110704 091957 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140312847214432 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140312847214432 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Mon Jul  4 09:20:10 2011
+T:140312847214432 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140312847214432 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110704 130025 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140312847214432 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140312847214432 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110705 130008 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140504326322016 Error in program 'apache2': ======> User 630319 has no RFC authorization for function group SYST.
+T:140504326322016 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110706 091512 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140532045580128 Error in program 'apache2': ======> User 700656 has no RFC authorization for function group SYST.
+T:140532045580128 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110706 092705 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140532045580128 Error in program 'apache2': ======> User 700656 has no RFC authorization for function group SYST.
+T:140532045580128 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Wed Jul  6 11:29:56 2011
+T:140532045580128 Error in program 'apache2': ======> User 700656 has no RFC authorization for function group SYST.
+T:140532045580128 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110707 085243 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140070923908960 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140070923908960 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jul  7 08:55:13 2011
+T:140070923908960 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140070923908960 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110707 085626 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140070923908960 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140070923908960 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110707 085757 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140070923908960 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140070923908960 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110707 091823 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140070923908960 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140070923908960 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110707 101345 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140070923908960 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140070923908960 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110707 110054 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140070923908960 Error in program 'apache2': ======> Overflow during the arithmetical operation (type P) in program SAPLZFGFIASM001                         .
+T:140070923908960 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+T:140070923908960 Error in program 'apache2': <* RfcCallReceive [8] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jul  7 14:05:01 2011
+T:140070923908960 Error in program 'apache2': ======> Overflow during the arithmetical operation (type P) in program SAPLZFGFIASM001                         .
+T:140070923908960 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+T:140070923908960 Error in program 'apache2': <* RfcCallReceive [5] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110708 100657 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140216278202208 Error in program 'apache2': ======> Overflow during the arithmetical operation (type P) in program SAPLZFGFIASM001                         .
+T:140216278202208 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+T:140216278202208 Error in program 'apache2': <* RfcCallReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110708 154105 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140216278202208 Error in program 'apache2': ======> Overflow during the arithmetical operation (type P) in program SAPLZFGFIASM001                         .
+T:140216278202208 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+T:140216278202208 Error in program 'apache2': <* RfcCallReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110711 133127 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139712483063648 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:139712483063648 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110712 091025 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140508747568992 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140508747568992 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110712 091117 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140508747568992 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140508747568992 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110712 091306 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140508747568992 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140508747568992 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Jul 12 11:32:58 2011
+T:140508747568992 Error in program 'apache2': ======> Overflow during the arithmetical operation (type P) in program SAPLZFGFIASM001                         .
+T:140508747568992 Error in program 'apache2': <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+T:140508747568992 Error in program 'apache2': <* RfcCallReceive [7] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110714 111141 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139981350852448 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.2.12.141, GWSERV=sapgw00, ASHOST=10.2.12.141, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       connection to host 10.2.12.141, service 3300 timed out
+
+TIME        Thu Jul 14 11:11:41 2011
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -12
+MODULE      nixxi_r_mt.cpp
+LINE        1109
+DETAIL      NiPConnect
+COUNTER     1
+
+
+**** ERROR file opened at 20110714 121638 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139981350852448 Error in program 'apache2': ======> Time limit exceeded.
+T:139981350852448 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+T:139981350852448 Error in program 'apache2': <* RfcCallReceive [5] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Jul 14 15:00:30 2011
+T:139981350852448 Error in program 'apache2': ======> Time limit exceeded.
+T:139981350852448 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+T:139981350852448 Error in program 'apache2': <* RfcCallReceive [9] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110715 104636 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140357870843744 Error in program 'apache2': ======> Overflow during the arithmetical operation (type P) in program SAPLZFGFIASM001                         .
+T:140357870843744 Error in program 'apache2': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+T:140357870843744 Error in program 'apache2': <* RfcCallReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110720 093339 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140720702220128 Error in program 'apache2': ======> Password logon no longer possible - too many failed attempts
+T:140720702220128 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110805 144714 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140208144988000 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140208144988000 Error in program 'apache2': <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110805 145537 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140208144988000 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140208144988000 Error in program 'apache2': <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri Aug  5 15:13:25 2011
+T:140208144988000 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140208144988000 Error in program 'apache2': <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110805 151457 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140208144988000 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140208144988000 Error in program 'apache2': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110805 151632 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140208144988000 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140208144988000 Error in program 'apache2': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20110812 154336 WIT, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140268731549536 Error in program 'apache2': ======> Name or password is incorrect (repeat logon)
+T:140268731549536 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20190829 064252 UTC, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140670620874624 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.6.1.134, GWSERV=sapgw00, ASHOST=10.6.1.134, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 10.6.1.134, service 3300)
+
+TIME        Thu Aug 29 06:42:52 2019
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -10
+MODULE      nixxi_r_mt.cpp
+LINE        8786
+DETAIL      NiPConnect2
+SYSTEM CALL SiPeekPendConn
+ERRNO       111
+ERRNO TEXT  Connection refused
+COUNTER     1
+
+
+**** ERROR file opened at 20190829 064409 UTC, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:140670620874624 Error in program 'apache2': ======> User is locked. Please notify the person responsible
+T:140670620874624 Error in program 'apache2': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20190902 010425 UTC, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139985475352448 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.6.1.134, GWSERV=sapgw00, ASHOST=10.6.1.134, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 10.6.1.134, service 3300)
+
+TIME        Mon Sep  2 01:04:25 2019
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -10
+MODULE      nixxi_r_mt.cpp
+LINE        8786
+DETAIL      NiPConnect2
+SYSTEM CALL SiPeekPendConn
+ERRNO       111
+ERRNO TEXT  Connection refused
+COUNTER     1
+
+
+**** ERROR file opened at 20190902 030816 UTC, SAP-REL 640,0,211 RFC-VER 3 947627 MT-SL
+T:139985475352448 Error in program 'apache2': ======> SAP_CMINIT3 : rc=20 > Connect to SAP gateway failed
+Connect_PM  GWHOST=10.6.1.134, GWSERV=sapgw00, ASHOST=10.6.1.134, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 10.6.1.134, service 3300)
+
+TIME        Mon Sep  2 03:08:16 2019
+RELEASE     640
+COMPONENT   NI (network interface)
+VERSION     37
+RC          -10
+MODULE      nixxi_r_mt.cpp
+LINE        8786
+DETAIL      NiPConnect2
+SYSTEM CALL SiPeekPendConn
+ERRNO       111
+ERRNO TEXT  Connection refused
+COUNTER     1
+

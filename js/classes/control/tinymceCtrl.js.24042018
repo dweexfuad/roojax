@@ -1,0 +1,148 @@
+//***********************************************************************************************
+//*	Copyright (c) 2009 SAI
+//*	 All rights reserved. This program and the accompanying materials
+//*	 are made available under the terms of the Common Public License v1.0
+//*	 which accompanies this distribution, and is available at
+//*	Contributors 
+//* 			SAI, PT											
+//***********************************************************************************************
+
+window.control_tinymceCtrl = function(owner, options){
+	window.control_tinymceCtrl.prototype.parent.constructor.call(this, owner, options);
+	try{
+		this.className = "control_tinymceCtrl";
+		this.filePath = "";	
+		this.hint = "image";        
+		this.showHint = false;
+		this.autoView = false;	
+		this.viewType = 0;	
+		this.readOnly = false;
+		if (options !== undefined){
+			this.updateByOptions(options);		
+			if (options.readOnly != undefined) this.readOnly = options.readOnly;
+		}
+		this.init();
+	}catch(e){
+		alert(e);
+	}
+};
+window.control_tinymceCtrl.extend(window.control_control);
+window.tinymceCtrl = window.control_tinymceCtrl;
+window.control_tinymceCtrl.implement({
+	onLoad: function(e){		
+		try{			
+			window.tinymceloaded = true;
+			this.init();						
+			//getTinyMCECtrl(system.getActiveApplication()._mainForm);
+		}catch(e){
+			alert(e);
+		}
+	},
+	init: function(){
+		try{		
+			if (this.readonly){
+				this.editor = $("#"+this.getFullId()+"_view");
+				this.editor.show();
+				$("#"+this.getFullId()+"_container").hide();
+			}else {
+				this.editor = new TINY.editor.edit('editor', {
+						id: this.getFullId()+"_area",
+						width: "100%",
+						height: this.height - 50,
+						cssclass: 'tinyeditor',
+						controlclass: 'tinyeditor-control',
+						rowclass: 'tinyeditor-header',
+						dividerclass: 'tinyeditor-divider',
+						controls: ['bold', 'italic', 'underline', 'strikethrough', '|', 'subscript', 'superscript', '|',
+							'orderedlist', 'unorderedlist', '|', 'outdent', 'indent', '|', 'leftalign',
+							'centeralign', 'rightalign', 'blockjustify', '|', 'unformat', '|', 'undo', 'redo', 'n',
+							'font', 'size', 'style', '|', 'image', 'hr', 'link', 'unlink', '|', 'print'],
+						footer: false,
+						fonts: ['Verdana','Arial','Georgia','Trebuchet MS'],
+						xhtml: true,
+						cssfile: 'custom.css',
+						bodyid: 'editor',
+						footerclass: 'tinyeditor-footer',
+						resize: false
+					});
+				this.tinyeditor = this.editor;
+			}	
+		}catch(e){
+			error_log(e);
+		}
+	},
+	doEditorReady: function(e){		
+		//this.setReadOnly(this.readOnly);
+	},
+	doDraw: function(canvas){		
+		canvas.css({background : "#ffffff" });
+		var html = "<div id='"+ this.getFullId() +"_view' style='position:absolute;left:0;top:0;width:100%;height:100%;display:none'></div>"+
+					"<div id='"+ this.getFullId() +"_container' style='position:absolute;left:0;top:0;width:100%;height:100%;'>"+	
+					"<textarea id ='"+ this.getFullId() +"_area' name='"+ this.getFullId() +"_area' style='position:absolute;left:0;top:0;width:100%;height:100%;' "+					
+					"></textarea>"+
+					"</div>";
+		this.setInnerHTML(html, canvas);
+		
+	},	
+	getCode: function(){
+		if (this.readonly){
+			return  this.editor.html();
+		}else 
+			return this.editor.e.body.innerHTML;
+	},
+	setCode: function(code){
+		try{
+			if (this.readonly){
+				this.editor.html(code);
+			}else {
+				if(this.editor.xhtml && !this.editor.ie) {
+					code = code.replace(/<strong>(.*)<\/strong>/gi, '<span style="font-weight:bold;">$1</span>');
+					code = code.replace(/<em>(.*)<\/em>/gi, '<span style="font-weight:italic;">$1</span>');
+				}
+				this.editor.e.body.innerHTML = code;	
+			}
+		}catch(e){
+			error_log(e);
+		}
+	},
+	setReadOnly: function(readonly){
+		try{
+			this.readonly = readonly;
+			if (this.readonly){
+				this.editor = $("#"+this.getFullId()+"_view");
+				this.editor.show();
+				$("#"+this.getFullId()+"_container").hide();
+				this.tmpEditor = this.editor;
+			}else {
+				$("#"+this.getFullId()+"_view").hide();
+				$("#"+this.getFullId()+"_container").show();
+				if (this.tinyeditor == undefined){
+					this.editor = new TINY.editor.edit('editor', {
+						id: this.getFullId()+"_area",
+						width: "100%",
+						height: this.height - 50,
+						cssclass: 'tinyeditor',
+						controlclass: 'tinyeditor-control',
+						rowclass: 'tinyeditor-header',
+						dividerclass: 'tinyeditor-divider',
+						controls: ['bold', 'italic', 'underline', 'strikethrough', '|', 'subscript', 'superscript', '|',
+							'orderedlist', 'unorderedlist', '|', 'outdent', 'indent', '|', 'leftalign',
+							'centeralign', 'rightalign', 'blockjustify', '|', 'unformat', '|', 'undo', 'redo', 'n',
+							'font', 'size', 'style', '|', 'image', 'hr', 'link', 'unlink', '|', 'print'],
+						footer: false,
+						fonts: ['Verdana','Arial','Georgia','Trebuchet MS'],
+						xhtml: true,
+						cssfile: 'custom.css',
+						bodyid: 'editor',
+						footerclass: 'tinyeditor-footer',
+						resize: false
+					});
+					this.tinyeditor = this.editor;	
+				}
+				this.editor = this.tinyeditor;
+			}	
+		}catch(e){
+			alert(e);
+		}
+	}
+});

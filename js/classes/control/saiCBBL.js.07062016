@@ -1,0 +1,776 @@
+//***********************************************************************************************
+//*	Copyright (c) 2009 SAI
+//*	 All rights reserved. This program and the accompanying materials
+//*	 are made available under the terms of the Common Public License v1.0
+//*	 which accompanies this distribution, and is available at
+//*	Contributors 
+//* 			SAI, PT											
+//***********************************************************************************************
+window.control_saiCBBL = function(owner, options){
+    if (owner){
+		this.stateRO 	= "";
+		this.text 		= "";
+		this.caption 	= "saiLabel";
+		this.labelWidth = 100;
+		this.type 		= "text";
+		this.color      = system.getConfig("text.normalBgColor");
+		this.fontColor  = system.getConfig("text.normalColor");
+		this.isFocused  = false;
+		this.mode = 1;					
+		this.rightLabelCaption = "";
+		this.rightLabelWidth = 0;
+		this.eventChange = false;
+		this.width = 80;
+		window.control_saiCBBL.prototype.parent.constructor.call(this, owner, options);
+		this.className = "control_saiCBBL";        
+		window.control_saiCBBL.prototype.parent.setWidth.call(this, 80);
+		window.control_saiCBBL.prototype.parent.setHeight.call(this, 20);
+
+		this.bufferOption = 0;
+		this.wantTab = false;
+		this.textLength = 0;
+		this.tabStop = true;
+		this.password = false;
+		this.readOnly = false;
+		this.pressKeyDown = false;		
+        this.onDefocus = new control_eventHandler();
+        this.onKeyDown = new control_eventHandler();
+		this.onKeyPress = new control_eventHandler();
+		this.onBtnClick = new control_eventHandler();
+		this.onExit = new control_eventHandler();
+		this.onEnter = new control_eventHandler();
+		this.onChange = new control_eventHandler();
+		this.onRightLabelChange = new control_eventHandler();
+		
+		this.items = new control_arrayMap();
+		this.items2 = new control_arrayMap();
+				
+		this.sqlScript = "";
+		this.arrayKey = [];
+		this.dataCheck = true;
+		this.bufferData = new arrayMap();
+		this.operator = "";
+		this.rightLabelWidth = 0;		
+		this.rightLabelVisible = true;
+		this.realWidth = this.width;
+		this.btnVisible = true;
+		this.owner = owner;		
+		this.sql = "";
+		this.fields = [];
+		if (options !== undefined){
+			this.updateByOptions(options);
+			if (options.readOnly !== undefined) this.setReadOnly(options.readOnly);
+			if (options.caption!== undefined) this.setCaption(options.caption);
+			if (options.tipeText !== undefined) this.setTipeText(options.tipeText);
+			if (options.password !== undefined) this.setPassword(options.password);
+			if (options.labelWidth !== undefined) this.setLabelWidth(options.labelWidth);
+			if (options.rightLabelWidth !== undefined) this.setRightLabelWidth(options.rightLabelWidth);
+			if (options.color !== undefined) this.setColor(options.color);				
+			if (options.fontColor !== undefined) this.setFontColor(options.fontColor);				
+			if (options.alignment !== undefined) this.setAlignment(options.alignment);				
+			if (options.rightLabelVisible !== undefined) this.setRightLabelVisible(options.rightLabelVisible);					
+			if (options.btnVisible !== undefined) this.setBtnVisible(options.btnVisible);				
+			if (options.textLength !== undefined) this.setTextLength(options.textLength);										
+			if (options.lengthChar !== undefined) this.setTextLength(options.lengthChar);										
+			if (options.maxLength !== undefined) this.setTextLength(options.maxLength);										
+			if (options.btnClick !== undefined) this.onBtnClick.set(options.btnClick[0],options.btnClick[1]);										
+			if (options.change !== undefined) this.onChange.set(options.change[0],options.change[1]);
+			if (options.labelChange !== undefined) this.onRightLabelChange.set(options.labelChange[0],options.labelChange[1]);													
+			if (options.keyDown !== undefined) this.onKeyDown.set(options.keyDown[0],options.keyDown[1]);
+			if (options.keyPress !== undefined) this.onKeyPress.set(options.keyPress[0],options.keyPress[1]);
+			if (options.enter !== undefined) this.onEnter.set(options.enter[0],options.enter[1]);			
+			if (options.exit !== undefined) this.onExit.set(options.exit[0],options.exit[1]);			
+			if (options.text !== undefined) this.setText(options.text);
+			if (options.rightLabel !== undefined) this.setRightLabelCaption(options.rightLabel);
+			if (options.sql !== undefined) this.setSQL(options.sql[0], options.sql[1],options.sql[2],options.sql[3], options.sql[4],options.sql[5],options.sql[6]);
+			if (options.multiSelection !== undefined) this.setMultiSelection(options.multiSelection);
+			if (options.bufferOption != undefined) this.setBufferOptions(options.bufferOption);	
+			if (options.bufferData != undefined) this.setBufferData(options.bufferData);
+            if (options.placeHolder) this.setPlaceHolder(options.placeHolder);
+            if (options.service) this.setService(options.service);
+		}		
+    }
+};
+window.control_saiCBBL.extend(window.control_control);
+window.saiCBBL = window.control_saiCBBL;
+window.boFULL = 2;
+window.boHALF = 1;
+window.boNONE = 0;
+window.control_saiCBBL.implement({
+	doDraw: function(canvas){
+	    var n = this.getFullId();	
+	    
+		var lebar = this.width-this.labelWidth ;//- this.rightLabelWidth;		
+		var lft = lebar + this.labelWidth - 20;
+		var lft2 = lft + 30;
+		var shadLeft = this.labelWidth - 8;
+		var bottm = this.height-4;
+		var html =   "<div id='"+n+"_frame' style='{position: absolute;left: 0;top: 0;width:autp;height: 100%;}'> "+
+				"<div id='"+n+"_label' style='background:url(image/themes/"+system.getThemes()+"/dot.png) bottom left repeat-x;"+
+				"position:absolute;top : 0; left:0;width:"+this.labelWidth+"px;height:100%;white-space: nowrap;'>"+this.caption+" </div> "+ 
+				"<input id='"+n+"_edit' "+this.stateRO+" value='"+this.text+"' "+
+				"style='{width:"+lebar+"px;height:20px;color:"+this.fontColor+";"+
+				"position:absolute;left:"+this.labelWidth+";top:0;border:1px solid #a3a6a8;"+
+				"background:"+this.color+";border-width:1;}' "+
+				"onkeypress='return $$$(" + this.resourceId + ").eventKeyPress(event);' "+
+				"onkeydown='return $$$(" + this.resourceId + ").eventKeyDown(event);' "+
+				"onfocus='$$$(" + this.resourceId + ").doFocus();' "+
+				"onblur='$$$(" + this.resourceId + ").eventExit();' " +
+				"onchange='$$$(" + this.resourceId + ").doChange();' " +
+				"onmouseover = '$$$("+this.resourceId+").editMouseOver();' "+
+				"onmouseout = '$$$("+this.resourceId+").editMouseOut();' "+
+				"/>"+
+				"<div id='"+n+"_btn' style='position:absolute; left:"+lft+";top:0;width:20px;height:100%;"+
+				"cursor: pointer;display: '  "+
+				"onMouseOver='$$$(" + this.resourceId + ").eventMouseOver(event);' " +
+				"onMouseMove='$$$(" + this.resourceId + ").eventMouseMove(event);' " +
+				"onMouseDown='$$$(" + this.resourceId + ").eventMouseDown(event);' " +
+				"onMouseUp='$$$(" + this.resourceId + ").eventMouseOver(event);' " +
+				"onMouseOut='$$$(" + this.resourceId + ").eventMouseOut(event);' ><img src='icon/search3.png' style='position:absolute;top:2px;width:16;hight:16'/>" +
+				"</div>"+//this.rightLabelWidth+"px
+				"<div id='"+n+"_rightlabel' style='text-align:left;position:absolute; left:"+lft2+";top:3;width:100%;height:100%;white-space: nowrap;text-overflow:ellipsis}'>"+this.rightLabelCaption+"</div>"+
+				"</div>";		
+
+	    this.setInnerHTML(html, canvas);
+		this.setBtnVisible(this.btnVisible);
+		this.input = $("#"+n+"_edit").get(0);
+        this.btn = $("#"+n+"_btn");
+		
+		canvas.bind("mouseover",setEvent("$$$(" + this.resourceId + ").eventMouseOver2(event);") );		
+		canvas.bind("mouseout",setEvent("$$$(" + this.resourceId + ").eventMouseOut2(event);") );
+		this.btn.bind("click",setEvent("$$$(" + this.resourceId + ").eventMouseClick(event);"));
+	},
+	eventMouseMove: function(event){	
+		
+	},
+	setPlaceHolder: function(placeHolder){
+        try{
+            this.placeHolder = placeHolder;
+            if (placeHolder) {
+                this.setLabelWidth(0);
+                $("#"+this.getFullId() +"_edit").attr("placeholder",this.caption);
+                $("#"+this.getFullId() +"_label").hide();
+            }else {
+                this.setLabelWidth(this.labelWidth);
+                $("#"+this.getFullId() +"_edit").attr("placeholder","");
+                $("#"+this.getFullId() +"_label").show();
+            }    
+        }catch(e){
+            console.log(e);
+        }
+        
+        
+    },
+	eventMouseOver: function(event){	
+		var lbl = this.getCanvas();	
+		if (lbl !== undefined) lbl.style.color = "#000000"; 	
+	    switch (this.mode)
+	    {
+	        case 1 :
+	                this.btn.css({backgroundPosition : "0 -20" });
+	                break;
+	        case 2 :
+	        case 3 :
+	                this.btn.css({backgroundPosition : "0 -18" });
+	                break;
+	    }	    
+	},
+	eventMouseOut: function(event){
+	   this.btn.css({backgroundPosition : "0 0" });
+	    system.hideHint();	    
+	},
+	eventMouseOut2: function(event){	   
+	    if (document.all){
+			this.input.color = this.readOnly ? system.getConfig("text.disabledFontColor") : this.isFocused ? system.getConfig("text.normalColor") : this.fontColor;	
+		}else{
+			this.input.style.color = this.readOnly ? system.getConfig("text.disabledFontColor") : this.isFocused ? system.getConfig("text.normalColor") : this.fontColor;	
+		}
+		this.input.style.border =  this.isFocused ? system.getConfig("text.overBorderColor") : system.getConfig("text.normalBorderColor");
+	},	
+	eventMouseOver2: function(event){	
+		if (document.all){
+			this.input.color = this.readOnly ? system.getConfig("text.disabledFontColor") : system.getConfig("text.overColor");				
+		}else{
+			this.input.style.color = this.readOnly ? system.getConfig("text.disabledFontColor") : system.getConfig("text.overColor");				
+		}
+		this.input.style.border =  system.getConfig("text.overBorderColor");
+	},	
+	eventMouseDown: function(event){
+	   switch (this.mode)
+	    {
+	        case 1 :
+	                this.btn.css({backgroundPosition : "0 -39" });
+	                break;
+	        case 2 :
+	        case 3 :
+	                this.btn.css({backgroundPosition : "0 -36" });
+	                break;
+	    }
+	},
+	eventMouseClick: function(event){
+		try{
+			if (this.onBtnClick.method === undefined){
+			    //if (this.app._mainForm.listDataForm) this.app._mainForm.listDataForm.free();
+				var edit = $("#"+this.getFullId()+"_edit");
+				if (this.sql){		
+					
+					if (this.app._mainForm.listDataForm == undefined)
+					{
+						uses("system_fListData");
+						this.app._mainForm.listDataForm = new system_fListData(this.app);	
+						this.app._mainForm.listDataForm.hide();													
+					}
+	                this.app._mainForm.listDataForm.setCaption(this.listDataCaption);
+	                this.app._mainForm.listDataForm.setFields(this.fields, "where");
+	                this.app._mainForm.listDataForm.setLabels(this.labels);
+	                
+					//this.app._mainForm.listDataForm.setHeight(470);
+					//this.app._mainForm.listDataForm.setLeft(system.screenWidth / 2 - 200);//edit.offset().left
+					//this.app._mainForm.listDataForm.setTop(system.screenHeight / 2 - 235);//edit.offset().top + this.height				
+					this.app._mainForm.listDataForm.setRequester(this.getTargetClass(), this, 0,0,false,undefined);		
+					this.app._mainForm.listDataForm.setScriptSql("select "+this.fields+" from ("+this.sql +") a ", this.getSqlCount(this.sql));
+					this.app._mainForm.listDataForm.show(false);				
+					this.app._mainForm.listDataForm.setFocus();		
+				}else systemAPI.alert("SQL not defined.","Contact your administrator");
+			}else if (this.onBtnClick.method == "eventEmitter"){
+                return;   
+            }else {
+				this.onBtnClick.call(this, this);
+			}
+		}catch(e){
+			error_log(e);
+		}
+
+	},	
+	eventExit: function(sender){
+		this.input.style.background = this.readOnly ? system.getConfig("text.disabled") : this.color;
+	    this.onExit.call(this);
+		this.isFocused  = false;
+		this.doLostFocus(true);
+		this.input.style.border = system.getConfig("text.normalBorderColor");	
+	},
+	doFocus: function(sender){
+		this.input.style.background = system.getConfig("text.focus");
+		this.onEnter.call(this);
+		this.isFocused  = true;
+		this.getForm().setActiveControl(this);	
+		setCaret(this.input,0,this.input.value.length);
+		
+	},
+	doKeyDown: function(keyCode, buttonState){
+	},
+	doKeyPress: function(charCode, buttonState){		
+	},
+	doChange: function(sender){	
+        console.log("doChange ");
+		this.setRightLabelCaption("");
+		this.text = this.input.value;
+		this.onChange.call(this); 	
+        this.emit("change",this);
+	},
+	eventKeyPress: function(event, sender){
+		try{		
+			window.system.buttonState.set(event);		
+		    var keyCode = document.all ? event.keyCode: event.which;
+		    var charCode = document.all ? system.charCode[event.keyCode] : system.charCode[event.charCode];		
+			if (keyCode != 40)
+				this.pressKeyDown = false;		
+			this.onKeyPress.call(sender, charCode, window.system.buttonState);    
+			if (system.charCode[keyCode] != undefined && keyCode > 48 && this.textLength > 0 && this.textLength <= this.getText().length)
+				return false;
+			else if (this.pressKeyDown) return false;  
+			else return true;
+		}catch(e){
+			alert("saiCBBL:keypress:"+e);
+			return false;
+		}	
+	},
+	eventKeyDown: function(event, sender){
+		window.system.buttonState.set(event);
+		var tab = false;
+		if (event.keyCode == 9){
+			tab = true;
+		}	
+		if (event.keyCode == 13 || tab)
+		{
+			this.owner.nextCtrl(this);
+			this.pressKeyDown = false;	
+		}else if ((event.keyCode == 27))
+		{
+            this.input.blur();		  
+			this.owner.prevCtrl(this);
+			this.pressKeyDown = false;	
+		}else if ((event.keyCode == 40)&&(!this.pressKeyDown) && this.btnVisible)
+		{
+			this.pressKeyDown = true;
+			if (this.multiSelection){
+				if (this.sql){
+					if (system.fMultipleSelection === undefined) 
+					{
+						uses("system_fSelectOptions");
+						this.app.fMultipleSelection = new system_fSelectOptions(this.app);					
+						
+					}
+					this.app.fMultipleSelection.setCaption("Cari Data ("+(this.listDataCaption || this.caption).toString()+")");
+					this.app.fMultipleSelection.setRequester(this.getTargetClass(), this, 0,0,false,undefined);		
+					this.app.fMultipleSelection.setScriptSql("select "+this.fields+" from ("+this.sql +") a ", this.getSqlCount(this.sql));
+					this.app.fMultipleSelection.setFields(this.fields, "where");
+					this.app.fMultipleSelection.setLabels(this.labels);
+					this.app.fMultipleSelection.showForm(false);				
+					this.app.fMultipleSelection.setFocus();				
+				}else systemAPI.alert("SQL not defined.","Contact your administrator");
+			}else if (this.multiSelection == false){
+				if (this.sql){				
+					{
+						uses("util_standar");
+						this.app._mainForm.listDataForm = new portalapp_fListData(this.app);
+						//this.app._mainForm.listDataForm.setWidth(450);
+						//this.app._mainForm.listDataForm.setHeight(477);			
+						this.app._mainForm.listDataForm.hide();													
+					}
+					
+					this.app._mainForm.listDataForm.setCaption("Cari Data ("+(this.listDataCaption || this.caption).toString()+")");
+					this.app._mainForm.listDataForm.setRequester(this.getTargetClass(), this, 0,0,false,undefined);		
+					this.app._mainForm.listDataForm.setScriptSql("select "+this.fields+" from ("+this.sql +") a ", this.getSqlCount(this.sql));
+					this.app._mainForm.listDataForm.setFields(this.fields, "where");
+					this.app._mainForm.listDataForm.setLabels(this.labels);
+					this.app._mainForm.listDataForm.show(false);				
+					this.app._mainForm.listDataForm.setFocus();				
+				}else systemAPI.alert("SQL not defined.","Contact your administrator");
+			}else{
+				this.onBtnClick.call(this,this, event);
+				this.pressKeyDown = true;
+			}
+			return false;
+		}else if (event.keyCode != 40)
+			this.pressKeyDown = false;
+		this.onKeyDown.call(sender, event.keyCode, window.system.buttonState);    
+		if (tab || event.keyCode == 13)
+			return false;
+		if (system.charCode[event.keyCode] != undefined && event.keyCode > 48 && this.textLength > 0 && this.textLength <= this.getText().length)
+			return false;
+		else return true;		
+	},
+	doLostFocus: function(fromEdit){
+		window.control_saiCBBL.prototype.parent.doLostFocus.call(this);
+	    if (this.activeChar != undefined)
+	        this.activeChar.style.background = "";    
+	    this.isFocused  = false;
+	    this.onDefocus.call(this);
+		
+		if (this.sql !="" && this.dataCheck) this.checkItem();		
+	},
+	blur: function(){
+		this.input.blur();
+		
+	},	
+	getText: function(){
+	 	var nd = this.input;
+		this.text = nd.value;
+	    return this.text;	
+	},
+	setText: function(data, rightCaption){	
+		if (data == undefined) data = "";
+	    this.text = data;				
+	    this.input.value = data;	
+		this.setRightLabelCaption(rightCaption !== undefined ? rightCaption : "");						
+		this.eventChange = true;
+		this.pressKeyDown = false;
+		
+		if (this.sql !="" && this.dataCheck) this.checkItem();
+		else {
+            this.onChange.call(this);
+            this.emit("change", this);
+        }
+	},
+	clear: function(data){
+		this.setText("");
+		this.setRightLabelCaption("");
+		this.dataSelection = undefined;	
+	},
+	isWantTab: function(){
+		return this.wantTab;
+	},
+	setWantTab: function(data){
+		this.wantTab = data;
+	},
+	isPassword: function(){
+		return this.password;
+	},
+	setPassword: function(data){
+		this.password = data;   	
+		var nd = $(this.getFullId());
+		if (nd != undefined)
+		{
+			if (this.password)
+				this.type = "password";		   
+			else this.type = "text";		   
+			this.input.type = this.type;
+			//this.doDraw(nd);
+		}
+	},
+	isReadOnly: function(){
+		return this.readOnly;
+	},
+	setReadOnly: function(data){
+		this.readOnly = data;    
+		//this.tabStop = !this.readOnly;		
+		this.stateRO = data ? "readonly": "";
+		this.input.readOnly = data;	
+		this.input.style.background = data ? system.getConfig("text.disabled") : this.color;
+		if (document.all)
+			this.input.color = data ? system.getConfig("text.disabledFontColor") : this.fontColor;		
+		else 
+			this.input.style.color = data ? system.getConfig("text.disabledFontColor") : this.fontColor;		
+	},
+	setWidth: function(data){
+		var n = this.getFullId();
+		var nd = $("#"+n);
+		window.control_saiCBBL.prototype.parent.setWidth.call(this,data); 
+		this.doDraw(nd);
+	},
+	setLabelWidth: function(data){
+		this.labelWidth = data;		
+		var nd = this.getCanvas();
+		this.doDraw(nd);
+	},
+	setCaption: function(data){
+		this.caption = data;
+		var nd = $("#"+this.getFullId() +"_label");	
+		if (nd != undefined) nd.html(data);
+	},
+	getCaption: function(){
+		return this.caption;	
+	},
+	setRightLabelCaption: function(data){
+		if (data == undefined) data = "";
+		var canvas = $("#"+this.getFullId() + "_rightlabel");
+		if (canvas != undefined)
+		{
+			canvas.html(data);	
+			this.rightLabelCaption = data;
+			var width = this.width - this.rightLabelWidth;		
+			this.rightLabelWidth = data.length * 7;		
+			lbr = width + this.rightLabelWidth;
+			var cnv = this.getCanvas();
+			cnv.css({ width : lbr });					
+			canvas.css({ width : this.rightLabelWidth });
+		}
+		this.setRightLabelVisible(this.rightLabelVisible);
+		this.onRightLabelChange.call(this, data);			
+	},
+	setItem: function(item){
+		this.items = item;
+	},
+	getItem: function(){
+		return this.items;
+	},
+	setItem2: function(item){
+		this.items2 = item;
+	},
+	getItem2: function(){
+		return this.items2;
+	},
+	isRightLabelVisible: function(){
+		return this.rightLabelVisible;
+	},
+	setRightLabelVisible: function(data){
+		try{
+			 this.rightLabelVisible = data;
+			 var canvas = $("#"+this.getFullId()+"_rightlabel");
+			 if (this.rightLabelVisible)
+				canvas.show();
+			else
+				canvas.hide();
+		}catch(e){
+			systemAPI.alert(this+"$setRightLabelVisible()",e);
+		}	
+	},
+	clearItem: function(){
+		this.items = [];
+		this.items2 = [];
+	},
+	editMouseOut: function(){
+		var input = this.input;//$(this.getFullId()+"_edit");
+		if (input == undefined) return;
+		this.input.style.background = this.readOnly ? system.getConfig("text.disabled") : this.isFocused ? system.getConfig("text.focus") : this.color;
+		if (document.all)
+			this.input.color = this.readOnly ? system.getConfig("text.disabledFontColor") : this.isFocused ? system.getConfig("text.normalColor") : this.fontColor;	
+		else
+			this.input.style.color = this.readOnly ? system.getConfig("text.disabledFontColor") : this.isFocused ? system.getConfig("text.normalColor") : this.fontColor;	
+	},
+	editMouseOver: function(){
+		var input = this.input;//$(this.getFullId()+"_edit");
+		if (input == undefined) return;	
+		this.input.style.background = this.readOnly ? system.getConfig("text.disabled") : this.isFocused ? system.getConfig("text.focus") : system.getConfig("text.overBgColor");
+		if (document.all)
+			this.input.color = this.readOnly ? system.getConfig("text.disabledFontColor") : this.isFocused ? system.getConfig("text.normalColor") : system.getConfig("text.overColor");
+		else
+			this.input.style.color = this.readOnly ? system.getConfig("text.disabledFontColor") : this.isFocused ? system.getConfig("text.normalColor") : system.getConfig("text.overColor");
+		
+	},
+	setColor: function(data){
+		this.color = data;  
+		if(this.input != undefined)
+	        this.input.style.background = data;		      
+	},
+	setFontColor: function(data){
+		this.fontColor = data;
+		if(this.input != undefined){
+			if (document.all)
+				this.input.color = data;		  
+			else 
+				this.input.style.color = data;		  
+		}
+	},
+	getColor: function(){
+		return this.color;
+	},
+	setBtnVisible: function(data){
+		this.btnVisible = data;
+		/*var canvas = $(this.getFullId()+"_btn");			
+		if (data)	
+			canvas.style.display = "";
+		else
+			canvas.style.display = "none";		
+			*/
+	},
+	setLength: function(data){	
+		this.textLength = data;
+	},
+	setTextLength: function(data){	
+		this.textLength = data;
+	},
+	checkItem: function(notWithRightLabel){
+	   try{//!this.needCheckItem || 			
+		    if (this.loading) return;		    
+    		this.notWithRightLabel = notWithRightLabel == undefined ? false: notWithRightLabel;
+    		if (this.getText() == "") return;	
+    		if (this.getText() == "-") return;	
+    		if (this.fields[0] == undefined || this.fields[0] == "") return;
+    		if (this.sql == "") {
+    			this.app.alert(this.getForm(), "Properti SQL belum didefinisikan","Eksekusi batal dilanjutkan");
+    			return ;
+    		}
+    		
+    		if (this.dbLib == undefined) return ;			
+			this.loading = true;		    		
+    		this.status = 1;    		    		
+    		switch (this.bufferOption){
+				case boFULL :
+					if (this.bufferData.getLength() == 0){						
+					}else {
+						var data = this.bufferData.get(this.getText());
+						if (data){
+							this.setRightLabelCaption(data[this.fields[1]]);							
+							var dataFromList = [];
+							for (var i in this.fields){
+								dataFromList[i] = data[this.fields[i]];
+							}				
+							this.dataFromList = dataFromList;															
+						}
+						this.loading = false;
+					}
+				break;
+				case boHALF :					
+				
+					if (this.bufferData.getLength() == 0){						
+						this.dbLib.getDataProviderA("select "+this.fields+" from ("+this.sql +") a  where "+this.fields[0]+" = '"+this.getText()+"' ", undefined,this);
+					}else {
+						var data = this.bufferData.get(this.getText());								
+						if (data){							
+							this.setRightLabelCaption(data[this.fields[1]]);
+							var dataFromList = [];
+							for (var i in this.fields){
+								dataFromList[i] = data[this.fields[i]];
+							}				
+							this.dataFromList = dataFromList;															
+							this.loading = false;
+						}else {							
+							this.dbLib.getDataProviderA("select "+this.fields+" from ("+this.sql +") a  where "+this.fields[0]+" = '"+this.getText()+"' ", undefined,this);
+						}
+					}
+				break				
+				default:					
+					this.dbLib.getDataProviderA("select "+this.fields+" from ("+this.sql +") a  where "+this.fields[0]+" = '"+this.getText()+"' ", undefined,this);
+					if (this.doubleCheck) this.status = 1;
+				break;
+			}    		    		
+  		}catch(e){
+  		    systemAPI.alert(this+"$checkItem",e);
+        }
+	},
+	free: function(){
+		if (this.dbLib != undefined) {
+			this.dbLib.delListener(this);
+			if (this.dbLib != this.app.dbLib){
+				//this.dbLib.free();
+			}
+		}
+		window.control_saiCBBL.prototype.parent.free.call(this);	
+	},	
+	setSQL: function(sql, fields, doubleCheck, labels, operator, caption, checkItem, dbLib){
+        try{
+            this.sql = sql;	
+            this.fields = fields;
+            for (var i in this.fields){
+                if (this.fields[i].indexOf(".") > 0)
+                    this.fields[i] = this.fields[i].substr(this.fields[i].indexOf(".")+1,this.fields[i].length - this.fields[i].indexOf("."));
+            }		
+            this.doubleCheck = false;
+            this.labels = labels;//label edit and grid
+            this.operator = operator;//search filter
+            if (typeof doubleCheck == "boolean") this.doubleCheck = doubleCheck;
+            //uses("util_dbLarge");
+            if (dbLib)
+                this.dbLib = dbLib;
+            else 
+                this.dbLib = this.app.dbLib;
+            this.dbLib.addListener(this);
+            this.listDataCaption = caption;
+            this.loading = false;
+            this.needCheckItem = checkItem === undefined ? true:checkItem;
+        }catch(e){
+            console.log(e);
+        }
+		
+	},
+	doRequestReady: function(sender, methodName, result, callObj, connection){
+		try{				
+			if (sender == this.dbLib && this == callObj){						
+				switch (methodName){
+					case "getDataProvider" :
+						try{							
+							eval("result = "+result+";");
+						}catch(e){
+							result = JSON.parse(result);
+						}
+                        var rightLbl = "";                           
+						if (typeof(result) !== "string"){						
+							var row = result.rs.rows[0];
+							if (row == undefined && this.needCheckItem) {								
+							    if (this.doubleCheck && this.status == 1 && this.fields[1]){							         
+                                     this.dbLib.getDataProviderA("select "+this.fields+" from ("+this.sql +") a where "+this.fields[1]+" = '"+this.getText()+"' ", undefined,this);
+							         this.status = 2;							         
+							         return;
+                                }else if ((!this.doubleCheck || this.status == 2) && this.fields[1]){
+									throw("Data "+this.getText()+" tidak ditemukan.");
+								}else if (this.status == 3 || this.status == 1) return;
+                            }                        
+                            if (row == undefined) return;
+							if (this.needCheckItem && row && row.msg != undefined && row.msg.toLowerCase().search("error") != -1) throw(row.msg+"<br>Hubungi administrator anda");					
+							this.dataFromList = [];
+							for (var c in row) this.dataFromList[this.dataFromList.length] = row[c];
+							var field0 = this.fields[0].substr(this.fields[0].indexOf(".")+1);
+							var field1 = (this.fields[1] ?  this.fields[1].substr(this.fields[1].indexOf(".")+1):"");
+							var dataFromList = [];
+							for (var i in this.fields){
+								eval("dataFromList[i] = row."+this.fields[i].substr(this.fields[i].indexOf(".")+1));
+							}				
+							this.dataFromList = dataFromList;															
+							
+							if (this.bufferOption == boHALF){
+								this.bufferData.set(this.dataFromList[0], row);
+							}
+							if (this.doubleCheck && this.status  == 2 && this.fields[1] && row){	
+								this.status = 3;																
+                                eval("var rightLbl = row." +field1+";this.rightLabelCaption = rightLbl;this.setText(row." +field0+");");                                     
+							}else if (this.fields[1] && row){
+								eval("var rightLbl = row." +field1+";this.rightLabelCaption = rightLbl;");													
+							}
+							if (this.eventChange) {
+                                this.onChange.call(this);		
+                                this.emit("change", this);
+                            }
+							this.eventChange = false;
+							if (!this.notWithRightLabel && this.fields[1])  this.setRightLabelCaption(rightLbl);							
+							this.loading = false;
+						}else throw("Ada Kesalahan transfer data " +result+"<br>Hubungi administrator anda");
+						break;
+				}
+			}
+		}catch(e){			
+			this.loading = false;
+			this.app.alert(e,"Cek kembali data inputan anda (field " + this.getCaption()+")."+result+this.status, this.dbLib);
+			this.status = 3;
+			this.setText("");
+		}
+	},
+	getRightLabelCaption : function(){
+		return this.rightLabelCaption;
+	},
+	setMultiSelection : function(data){
+		this.multiSelection = data;
+	},
+	getSqlCount: function(sql){
+		var pos = sql.indexOf("select");
+		var str1 = sql.substr(pos,pos+7);
+		pos = sql.indexOf("from");
+		var str2 = sql.substr(pos);
+		return "select count(*) from ("+sql+") a";
+	},
+	convertFilter: function(field){
+		if (this.dataFilter === undefined) return "";
+		var filterStr = "";
+		var filter = this.dataFilter;
+		if (filter.get("=").length != 0) filterStr = field + " in ("+filter.get("=")+")";
+		if (filter.get("range").getLength() != 0) {
+			tmp = filter.get("range");
+			var tmp2 = "";
+			for (var i in tmp.objList){
+				if (tmp2 != "") tmp2 += " or ";
+				tmp2 += field + " "+tmp.get(i);							
+			}
+			if (tmp2 != "") {
+				if (filterStr != "") filterStr += " or ";
+				filterStr += "("+ tmp2 +")";
+			}
+		}					
+		if (filter.get("like").getLength() != 0) {
+			tmp = filter.get("like");
+			var tmp2 = "";
+			for (var i in tmp.objList){
+				if (tmp2 != "") tmp2 += " or ";
+				tmp2 += field + " "+tmp.get(i);							
+			}
+			if (tmp2 != "") {
+				if (filterStr != "") filterStr += " or ";
+				filterStr += "("+ tmp2 +")";
+			}
+		}
+		if (filterStr != "") filterStr = "(" + filterStr +")";
+		return filterStr;
+	},
+	setDataCheck: function(data){
+		this.dataCheck = data;
+	},
+	setBufferOptions: function(data)
+	{
+		this.bufferOption = data;
+	},
+	setBufferData : function(data){				
+		this.bufferData = data;
+	},
+    addListener: function(event, listener){
+        try{
+            var self = this;
+            switch (event)
+            {
+                case "btnclick" :
+                                this.onBtnClick.method = "eventEmitter";
+                                this.btn.bind("click",function(e) 
+                                    { 
+                                        if (!e) e = window.event; 
+                                        self.emit("btnclick", self, e.srcElement == self.canvas, e);
+                                    });
+                                break;
+            }
+            window.control_saiCBBL.prototype.parent.addListener.call(this, event, listener);				    
+        }catch(e){
+            error_log(e);
+        }
+    },
+    setService: function(service){
+        this.service = service;
+    }
+});

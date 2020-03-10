@@ -1,0 +1,40 @@
+<server_util_Map>
+	<tag1 type="string" isNull="true"></tag1>
+	<tag2 type="string" isNull="true"></tag2>
+	<tag3 type="string" isNull="true"></tag3>
+	<objList>
+		<obja name="server_util_rfcLib" type="string">server_util_rfcLib</obja>
+		<obj0 name="server_DBConnection_dbLib" type="string">server_DBConnection_dbLib</obj0>		
+		<obj1 name="server_report_report" type="string">server_report_report</obj1>		
+		<obj2 name="server_util_grabCurs" type="string">server_util_grabCurs</obj2>
+		<obj3 name="server_pdf_Pdf" type="string">server_pdf_Pdf</obj3>
+		<obj4 name="server_util_File" type="string">server_util_File</obj4>
+	    <obj5 name="server_graph_graph" type="string">server_graph_graph</obj5>
+	    <obj6 name="server_ide_editor" type="string">server_ide_editor</obj6>
+		<obj7 name="server_util_serverVariable" type="string">server_util_serverVariable</obj7>
+		<obj8 name="server_DBConnection_dbTools" type="string">server_DBConnection_dbTools</obj8>
+		<obj9 name="server_util_mail" type="string">server_util_mail</obj9>
+		<obj10 name="server_sms_sms" type="string">server_sms_sms</obj10>
+		<obj10 name="server_util_subversion" type="string">server_util_subversion</obj10>
+		<obj11 name="server_util_keyManager" type="string">server_util_keyManager</obj11>
+		<obj12 name="server_util_remoteScript" type="string">server_util_remoteScript</obj12>
+		<obj13 name="server_util_barcode" type="string">server_util_barcode</obj13>
+		<obj14 name="server_upload_assetsap_uploadData" type="string">server_upload_assetsap_uploadData</obj14>
+		<obj15 name="server_process_amu_genKKIL" type="string">server_process_amu_genKKIL</obj15>
+		<obj16 name="server_process_amu_genAlternatif" type="string">server_process_amu_genAlternatif</obj16>
+		<obj17 name="server_process_budget_susutbpp" type="string">server_process_budget_susutbpp</obj17>
+		<obj18 name="server_util_xlsChart" type="string">server_util_xlsChart</obj18>
+		<obj19 name="server_util_rfc" type="string">server_util_rfc</obj19>
+		<obj20 name="server_util_PdfDesigner" type="string">server_util_PdfDesigner</obj20>
+		<obj21 name="server_app_rra_dataProvider" type="string">server_app_rra_dataProvider</obj21>
+		<obj22 name="server_app_saku2_dataProvider" type="string">server_app_saku2_dataProvider</obj22>
+		<obj23 name="server_app_hris_dataProvider" type="string">server_app_hris_dataProvider</obj23>
+		<obj24 name="server_app_eclaim2_dataProvider" type="string">server_app_eclaim2_dataProvider</obj24>
+		<obj25 name="server_app_inv_dataProvider" type="string">server_app_inv_dataProvider</obj25>
+		<obj26 name="server_app_dmt_dataProvider" type="string">server_app_dmt_dataProvider</obj26>
+		<obj27 name="server_app_rra_mail" type="string">server_app_rra_mail</obj27>
+		<obj28 name="server_app_rra_chat" type="string">server_app_rra_chat</obj28>
+		<obj29 name="server_util_financeLib" type="string">server_util_financeLib</obj29>
+		<obj30 name="server_util_grabber" type="string">server_util_grabber</obj30>	
+	</objList>
+</server_util_Map>

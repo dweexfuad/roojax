@@ -1,0 +1,189 @@
+<style type='text/css'>
+input{
+  font-family:Arial;
+  font-size:11px;  
+}
+input{
+  font-family:Arial;
+  font-size:11px;  
+}
+td{
+  font-family:Arial;
+  font-size:12px;  
+}
+th{
+  font-family:Arial;
+  font-size:12px;  
+  font-weight:bold;
+}
+body{
+  font-family:Arial;
+  font-size:12px; 
+}
+.messageBoard
+{
+    margin: 0 auto;
+    border: 0px solid #ffffff;
+    color: #ffffff;
+    width: 500;
+	height:200;
+    padding: 20px;
+    text-align: left;
+    background-color: #555555;	
+    border: 3px solid #ffffff;
+	position:absolute;
+	top:-300;
+	left :25%;
+	
+}
+canvas 	{ background-color: transparent; top: 0; left: 0; position: absolute;}
+canvas.resize-ne { cursor: ne-resize; }
+canvas.resize-se { cursor: se-resize; }
+canvas.resize-sw { cursor: sw-resize; }
+canvas.resize-nw { cursor: nw-resize; }
+canvas.move { cursor: move; }
+canvas.default { cursor: default; }
+
+.tabHeader{
+    position:absolute;top:0;left:0;width:80;height:100%;border-top:1px solid #88d5f4;
+    border-right:1px solid #88d5f4;border-left:1px solid #88d5f4;-webkit-border-top-left-radius: 8px;-webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;-moz-border-radius-topright: 8px;text-align:center;cursor:pointer;
+    background-color:#1d3e5b;background-image:url(image/themes/dynpro/tabHeader.png);
+    background-position:bottom left;background-repeat:repeat-x;
+}
+.tabSelect{
+    position:absolute;top:0;left:0;width:80;height:100%;border-top:1px solid #88d5f4;
+    border-right:1px solid #88d5f4;border-left:1px solid #88d5f4;-webkit-border-top-left-radius: 8px;-webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;-moz-border-radius-topright: 8px;text-align:center;cursor:pointer;
+    background-color:#6a8b98;background-image:url(image/themes/dynpro/tabHeader.png);
+    background-position:bottom left;background-repeat:repeat-x;
+}
+.tabOver{
+    position:absolute;top:0;left:0;width:80;height:100%;border-top:1px solid #88d5f4;
+    border-right:1px solid #88d5f4;border-left:1px solid #88d5f4;-webkit-border-top-left-radius: 8px;-webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;-moz-border-radius-topright: 8px;text-align:center;cursor:pointer;
+    background-color:#ff9900;background-image:url(image/themes/dynpro/tabHeader.png);
+    background-position:bottom left;background-repeat:repeat-x;
+}
+.grid_header {
+	font-family: Arial;
+    font-size: 10px;
+    color: #000000;
+	border:1px solid #919B9B;	
+		font-weight: bold;
+		padding:3px;
+}
+.judul_laporan{
+    font-family: Arial;
+    font-size: 10px;
+    color: #000000;
+		font-weight: bold;
+		padding:3px;
+}
+.lokasi_laporan{
+        font-family: Arial;
+     	font-size: 12px;
+        color: #000000;
+		font-weight: bold;
+		padding:3px;
+}
+.lokasi_laporan2{
+        font-family: Arial;
+     	font-size: 14px;
+        color: #3f5a9c;
+		font-weight: bold;
+		padding:3px;
+}
+.tanggal_laporan{
+        font-family: Arial;
+     	font-size: 10px;
+        color: #000000;
+		padding:3px;
+		
+}
+.isi_laporan {
+	color : #000000;
+	font-family : Arial;
+	font-size : 10px;
+	text-decoration : none;
+	padding:3px;
+}
+.detail_laporan {
+	color : #0000FF;
+	font-family : Arial;
+	font-size : 10px;
+	text-decoration : none;
+	padding:3px;
+}
+.header_laporan {
+	color : #000000;
+	font-family : Arial;
+	font-size : 10px;
+	text-decoration : none;
+	font-weight: bold;
+	padding:3px;
+}
+.sum_laporan {
+	color : #000000;
+	font-family : Arial;
+	font-size : 10px;
+	text-decoration : none;
+    font-weight: bold;
+	padding:3px;
+}
+
+.kotak {
+	border-collapse : collapse;
+	bordercolor : #111111;
+}
+.kotak_teks{
+	border: 1px solid #000000; 
+	background-color: #ffffff; 
+	padding: 3px;
+}
+.judul_bukti{
+    font-family: Arial;
+    font-size: 16px;
+    color: #000000;
+		font-weight: bold;
+		padding:3px;
+}
+.isi_bukti {
+	color : #111111;
+	font-family : Arial;
+	font-size : 12px;
+	text-decoration : none;
+	padding:3px;
+}
+.style15 {font-size: 12px; font-family: Arial, Helvetica, sans-serif; }
+.style16 {font-size: 14px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.style17 {font-size: 24px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.style18 {font-size: 12px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.style19 {font-size: 12px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;color: #FFFFFF; font-style: italic; }
+
+.nstyle15 {font-size: 15px; font-family: Arial, Helvetica, sans-serif; }
+.nstyle16 {font-size: 15px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.nstyle17 {font-size: 29px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.nstyle18 {font-size: 15px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.nstyle19 {font-size: 15px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;color: #FFFFFF; font-style: italic; }
+
+.margin {margin-left:2cm; margin-top:1.2cm; }
+
+.istyle11 {font-size: 10px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.istyle12 {font-size: 11px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.istyle13 {font-size: 10px; font-family: Arial, Helvetica, sans-serif; }
+.istyle14 {font-size: 11px; font-family: Arial, Helvetica, sans-serif; }
+.istyle15 {font-size: 12px; font-family: Arial, Helvetica, sans-serif; }
+.istyle16 {font-size: 14px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.istyle17 {font-size: 20px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.istyle18 {font-size: 12px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.istyle19 {font-size: 12px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;color: #FFFFFF; font-style: italic; }
+
+.egov1 {font-size: 24px; font-weight: bold; font-family:Courier New, Courier, monospace; }
+.egov2 {font-size: 13px; font-weight: bold; font-family:Courier New, Courier, monospace; }
+.egov3 {font-size: 11px; font-family:Courier New, Courier, monospace; }
+.egov4 {font-size: 10px; font-family:Geneva, Arial, Helvetica, sans-serif; }
+.egov5 {font-size: 9px; font-family:Geneva, Arial, Helvetica, sans-serif; }
+.egov6 {font-size: 10px; font-weight: bold; font-family:Geneva, Arial, Helvetica, sans-serif; }
+.egov7 {font-size: 11px; font-weight: bold; font-family:Courier New, Courier, monospace; }
+</style>

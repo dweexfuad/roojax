@@ -1,0 +1,131 @@
+/*Data tables*/
+button.dt-button,
+div.dt-button,
+a.dt-button {
+  background: #4EAD5B;
+  color: #ffffff;
+  border-color:#4EAD5B;
+}
+button.dt-button:hover,
+div.dt-button:hover,
+a.dt-button:hover {
+  background: rgb(104, 229, 120);
+}
+button.dt-button:hover:not(.disabled),
+div.dt-button:hover:not(.disabled),
+a.dt-button:hover:not(.disabled) {
+  background: rgb(104, 229, 120);
+  color: white;
+  border-color: rgba(120, 130, 140, 0.13);
+}
+
+.form-control {
+    font-size: 12px;
+    padding:2px;
+    border: 1px solid #ddd;
+}
+
+.right{
+    text-align: right;
+}
+
+.p-t-10{
+    padding-top: 10px;
+}
+
+.sidebar-menu{
+    font-size: 14px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+#ba-header{
+    width:100%;
+    margin: 10px;
+    font-size: 14px;
+}
+
+#catatan {
+    margin-top:20px;
+}
+
+#catatan ol {
+    list-style-type: decimal !important;
+}
+
+.bg-purple {
+    background-color: #7b00ff;
+    color:white;
+}
+
+.bg-purple .progress-bar-purple {
+    background-color: #9400ff;
+}
+
+@media print {
+    html, body {
+        border: 1px solid white;
+        height: 99%;
+        page-break-after: avoid;
+        page-break-before: avoid;
+    }
+
+    body *, title, hr {
+      visibility: hidden !important;
+    }
+
+    body {
+        padding-top:0px;
+    }
+
+    .top-navbar, .sidebar-left, .page-heading, .breadcrumb {
+    display:none !important;
+    }
+
+    @page { size: auto;  margin: 2mm;}
+    #section-to-print, #section-to-print * {
+      visibility: visible !important;
+      page-break-after: break auto;
+    }
+
+    #section-to-print .hide-print, footer {
+        display: none !important;
+    }
+
+    #the-box {
+        border:0px !important;
+        margin:0px !important;
+    }
+
+    #section-to-print input  {
+        border-style: none !important;
+    }
+
+    #section-to-print h3{
+        font-weight: bold !important;
+        text-align: center !important;
+    }
+    #section-to-print {
+      /* position: absolute !important; */
+      left: 0 !important;
+      top: 0px !important;
+    }
+
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        padding:1px;
+    }
+
+    .table>thead>tr>td{
+        background-color: #aaaaaa !important;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    /* @-moz-document url-prefix() {
+        #section-to-print {
+            left: -140px !important;
+            top: 0 !important;
+        !important  float:left !important;}
+    } */
+  }

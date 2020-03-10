@@ -1,0 +1,6 @@
+1. 26-06-2013
+   saiTreeGrid, saiTreeGridNode, column
+	- resize kolom, border antar row berjalan normal
+   -> lanjutan
+	- backup ada .js.bak
+	- akan di update agar bisa Freeze... 
